@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeloCoin ($SELO) — Investera i Framtiden &amp; Bevara Miljön</title>
+  <meta name="description" content="SeloCoin ($SELO) är den koldioxidnegativa kryptovalutan som förenar hög avkastning med verifierad återbeskogning och klimatskydd. Gå med i Presale idag." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Urgency & Live Impact Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="pulse-dot"></span>
+        <span><strong>PRESALE FAS 3 PÅGÅR:</strong> 84.6% sålt innan prisökning till $0.055</span>
+      </div>
+      <div class="top-bar-right">
+        <span class="eco-metric">🌱 <strong>1 428 910</strong> träd planterade</span>
+        <span class="divider">|</span>
+        <span class="eco-metric">🌍 <strong id="live-co2-counter">34 892.4</strong> ton CO₂ bundet</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="url(#seloGrad)" stroke-width="2.5" fill="rgba(16, 185, 129, 0.1)" />
+            <path d="M20 8C13.5 12 11 18.5 13 24.5C14.5 29 19.5 31 20 31C20.5 31 25.5 29 27 24.5C29 18.5 26.5 12 20 8Z" fill="url(#seloGrad)" />
+            <path d="M20 13V28M20 19L16 16M20 23L24 19.5" stroke="#04130d" stroke-width="2" stroke-linecap="round" />
+            <defs>
+              <linearGradient id="seloGrad" x1="8" y1="6" x2="32" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#34D399" />
+                <stop offset="0.6" stop-color="#10B981" />
+                <stop offset="1" stop-color="#F59E0B" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">SeloCoin</span>
+          <span class="brand-tag">$SELO • ECO CRYPTO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#varfor">Varför SeloCoin</a>
+        <a href="#kalkylator">Vinst &amp; Miljökalkylator</a>
+        <a href="#ekosystem">Miljöbevis</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#faq">Vanliga frågor</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm" id="connectWalletBtn">
+          <span class="wallet-icon">◈</span> Anslut Plånbok
+        </button>
+        <a href="#presale-widget" class="btn btn-primary btn-sm">Köp $SELO Nu</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="container hero-grid">
+      <!-- Left Column: Persuasive Sales Copy & Visual Showcase -->
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="badge-icon">🌿</span>
+          <span>Världens första koldioxidnegativa tillväxtvaluta</span>
+        </div>
+
+        <h1 class="hero-title">
+          Investera i <span class="text-gradient">Framtiden.</span><br />
+          Bevara Planeten med varje Transaktion.
+        </h1>
+
+        <p class="hero-subtitle">
+          <strong>SeloCoin ($SELO)</strong> kombinerar explosiv kryptotillväxt med direkt klimatnytta. Genom vårt patenterade <em>Proof-of-Canopy™</em>-protokoll planteras verifierad regnskog vid varje transaktion samtidigt som vårt deflationära system bränner tokens och belönar hållare med <strong>18.5% APY</strong>.
+        </p>
+
+        <!-- Key Value Props -->
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <div class="highlight-check">✓</div>
+            <div>
+              <strong>1 Köp = Planterade Träd</strong>
+              <span>GPS-spårad återbeskogning på blockkedjan</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-check">✓</div>
+            <div>
+              <strong>+185% Förväntad Noteringsbonus</strong>
+              <span>Presale-pris $0.042 • Lanseringspris $0.120</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-check">✓</div>
+            <div>
+              <strong>100% Grön Nordisk Energi</strong>
+              <span>99.99% lägre energiförbrukning än Bitcoin</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Coin Image Showcase Card -->
+        <div class="hero-visual-banner">
+          <div class="coin-showcase-wrapper">
+            <img src="assets/hero-coin.png" alt="SeloCoin 3D Klimatmynt" class="hero-coin-img" onerror="this.style.display='none'" />
+            <div class="floating-stat stat-top-left">
+              <span class="stat-label">CertiK Säkerhetsbetyg</span>
+              <span class="stat-value">99.4 / 100 🛡️</span>
+            </div>
+            <div class="floating-stat stat-bottom-right">
+              <span class="stat-label">Staking Belöning</span>
+              <span class="stat-value">18.5% Årlig APY 📈</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: High-Converting Presale Purchase Widget -->
+      <div class="presale-card-wrapper" id="presale-widget">
+        <div class="presale-card">
+          <div class="presale-header">
+            <div class="presale-stage-badge">FAS 3 SLUTAR SNART</div>
+            <h3>Köp SeloCoin ($SELO) i Presale</h3>
+            <p>Lås in lägsta priset innan offentlig börsnotering</p>
+          </div>
+
+          <!-- Countdown Timer -->
+          <div class="countdown-grid" id="countdown">
+            <div class="countdown-box">
+              <span class="count-num" id="cd-days">02</span>
+              <span class="count-label">Dagar</span>
+            </div>
+            <div class="countdown-box">
+              <span class="count-num" id="cd-hours">14</span>
+              <span class="count-label">Timmar</span>
+            </div>
+            <div class="countdown-box">
+              <span class="count-num" id="cd-mins">38</span>
+              <span class="count-label">Minuter</span>
+            </div>
+            <div class="countdown-box">
+              <span class="count-num" id="cd-secs">49</span>
+              <span class="count-label">Sekunder</span>
+            </div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="presale-progress-section">
+            <div class="progress-labels">
+              <span>Insamlade medel: <strong>42 310 500 kr</strong></span>
+              <span>Mål: 50 000 000 kr</span>
+            </div>
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" style="width: 84.6%;"></div>
+            </div>
+            <div class="price-tiers">
+              <span>Nuvarande pris: <strong class="highlight-green">0.45 kr ($0.042)</strong></span>
+              <span>Listar på: <strong class="highlight-gold">1.28 kr ($0.120)</strong></span>
+            </div>
+          </div>
+
+          <!-- Payment Method Tabs -->
+          <div class="pay-methods" role="tablist">
+            <button type="button" class="pay-tab active" data-currency="SEK">🇸🇪 Kort / Swish (SEK)</button>
+            <button type="button" class="pay-tab" data-currency="ETH">⟠ ETH</button>
+            <button type="button" class="pay-tab" data-currency="USDT">₮ USDT</button>
+          </div>
+
+          <!-- Swap Inputs -->
+          <div class="swap-form">
+            <div class="input-group">
+              <div class="input-header">
+                <label for="payAmount">Du investerar</label>
+                <span class="quick-amounts">
+                  <button type="button" class="quick-btn" data-val="1000">1 000</button>
+                  <button type="button" class="quick-btn" data-val="5000">5 000</button>
+                  <button type="button" class="quick-btn" data-val="15000">15 000</button>
+                  <button type="button" class="quick-btn" data-val="50000">50 000</button>
+                </span>
+              </div>
+              <div class="input-field-wrap">
+                <input type="number" id="payAmount" value="5000" min="100" step="100" />
+                <span class="currency-tag" id="payCurrencyTag">SEK</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-header">
+                <label for="receiveAmount">Du erhåller i $SELO</label>
+                <span class="bonus-tag" id="bonusBadge">+10% Miljöbonus inkluderad!</span>
+              </div>
+              <div class="input-field-wrap readonly">
+                <input type="text" id="receiveAmount" value="12 222" readonly />
+                <span class="currency-tag selo-tag">🌱 SELO</span>
+              </div>
+            </div>
+
+            <!-- Instant Eco Impact Preview inside Buy Box -->
+            <div class="instant-impact-box">
+              <div class="impact-title">🌍 Din direkta klimatnytta vid detta köp:</div>
+              <div class="impact-metrics">
+                <div class="impact-pill">
+                  <span class="impact-icon">🌲</span>
+                  <div>
+                    <strong id="buyTreesCount">50 träd</strong>
+                    <small>Planteras &amp; GPS-märks</small>
+                  </div>
+                </div>
+                <div class="impact-pill">
+                  <span class="impact-icon">💨</span>
+                  <div>
+                    <strong id="buyCo2Count">1 250 kg CO₂</strong>
+                    <small>Kompenseras per år</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <label class="stake-checkbox">
+              <input type="checkbox" id="autoStakeCheck" checked />
+              <span class="checkmark"></span>
+              <span>Aktivera <strong>Grön Staking (18.5% APY)</strong> direkt &amp; få daglig utdelning</span>
+            </label>
+
+            <button type="button" class="btn btn-primary btn-block btn-lg" id="buySeloBtn">
+              Köp SeloCoin &amp; Plantera Skog Nu →
+            </button>
+
+            <div class="presale-trust-footer">
+              <span>🔒 256-bit SSL &amp; Smart Contract Verifierad</span>
+              <span>•</span>
+              <span>0% Köpavgift i Presale</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Partner Strip -->
+  <section class="trust-strip">
+    <div class="container">
+      <p class="trust-title">GRANSKAD, CERTIFIERAD &amp; UPPMÄRKSAMMAD AV LEDANDE AKTÖRER INOM GRÖN FINANS</p>
+      <div class="trust-logos">
+        <div class="trust-logo-item">🛡️ <strong>CertiK</strong> <span>Smart Contract Audit</span></div>
+        <div class="trust-logo-item">🌿 <strong>Verra</strong> <span>Verified Carbon Standard</span></div>
+        <div class="trust-logo-item">☀️ <strong>Gold Standard</strong> <span>Climate Impact</span></div>
+        <div class="trust-logo-item">🏔️ <strong>Nordic GreenTech</strong> <span>Årets Innovation 2026</span></div>
+        <div class="trust-logo-item">🌳 <strong>OneTreePlanted</strong> <span>Global Partner</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story & Visual Pitch Section ("Varför SeloCoin?") -->
+  <section class="section" id="varfor">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">VARFÖR VÄLJA SELOCOIN?</span>
+        <h2 class="section-title">Kryptovalutan som gör din portfölj <span class="text-gradient">och planeten grönare</span></h2>
+        <p class="section-desc">
+          Traditionella kryptovalutor förbrukar lika mycket el som hela länder. SeloCoin vänder helt på ekvationen: ju mer nätverket används och växer i värde, desto mer natur räddas.
+        </p>
+      </div>
+
+      <!-- Feature Row 1: Reforestation Image + Sales Copy -->
+      <div class="feature-split">
+        <div class="feature-image-card">
+          <img src="assets/forest-impact.png" alt="SeloCoin Reforestation & Bio-Tech" class="feature-img" />
+          <div class="image-overlay-badge">
+            <span>📍 Amazonas &amp; Boreala Skogar i Norden</span>
+            <strong>100% Spårbart via Satellit &amp; Blockkedja</strong>
+          </div>
+        </div>
+        <div class="feature-text-content">
+          <div class="feature-number">01 • PROOF-OF-CANOPY™</div>
+          <h3>Varje transaktion finansierar verklig, mätbar återbeskogning</h3>
+          <p>
+            När du köper, håller eller handlar med <strong>$SELO</strong> går 1% av transaktionsvolymen automatiskt via ett låst smart kontrakt direkt till certifierade skogs- och solenergiprojekt.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <span class="list-icon">🌱</span>
+              <div>
+                <strong>Levande Green-NFT Certifikat:</strong> Du får ett personligt digitalt skogscertifikat i din plånbok med exakta satellitkoordinater till skogen dina mynt har räddat.
+              </div>
+            </li>
+            <li>
+              <span class="list-icon">🔥</span>
+              <div>
+                <strong>Deflationär Eco-Burn™:</strong> För varje 1 000 träd som planteras bränns 0.5% av transaktionspoolen permanent. Minskad tillgång + ökad efterfrågan = starkare kursutveckling.
+              </div>
+            </li>
+            <li>
+              <span class="list-icon">🏢</span>
+              <div>
+                <strong>Efterfrågad av Företag (ESG):</strong> Företag köper $SELO på öppna marknaden för att klimatkompensera sina utsläpp, vilket skapar ett konstant köptryck för alla investerare.
+              </div>
+            </li>
+          </ul>
+          <a href="#presale-widget" class="btn btn-primary">Bli Tidig Investerare →</a>
+        </div>
+      </div>
+
+      <!-- Feature Row 2: Eco Vault Image + Staking & Tech Copy -->
+      <div class="feature-split reverse">
+        <div class="feature-image-card">
+          <img src="assets/eco-vault.png" alt="SeloCoin Green Staking Eco-Vault" class="feature-img" />
+          <div class="image-overlay-badge">
+            <span>⚡ 18.5% Årlig Staking-Avkastning</span>
+            <strong>Finansierad av Gröna Koldioxidkrediter</strong>
+          </div>
+        </div>
+        <div class="feature-text-content">
+          <div class="feature-number">02 • PASSIV INKOMST MED GOTT SAMVETE</div>
+          <h3>Få dina pengar att växa med Grön Staking &amp; Koldioxidutdelning</h3>
+          <p>
+            SeloCoin är inte bara en spekulativ tillgång – vårt ekosystem genererar verkliga intäkter genom tokeniserade koldioxidkrediter som delas ut till dig som låser (stakar) dina $SELO.
+          </p>
+          <div class="stats-mini-grid">
+            <div class="stat-mini-card">
+              <span class="stat-mini-val">18.5%</span>
+              <span class="stat-mini-lbl">Årlig APY i Presale</span>
+            </div>
+            <div class="stat-mini-card">
+              <span class="stat-mini-val">0.001s</span>
+              <span class="stat-mini-lbl">Transaktionshastighet</span>
+            </div>
+            <div class="stat-mini-card">
+              <span class="stat-mini-val">-140%</span>
+              <span class="stat-mini-lbl">Koldioxidavtryck (Negativt)</span>
+            </div>
+          </div>
+          <p class="muted-note">
+            Ingen dyr gruvutrustning. Ingen miljöförstöring. Staka med ett klick direkt från din webbläsare eller mobil och se både ditt saldo och din personliga skog växa varje dag.
+          </p>
+          <a href="#kalkylator" class="btn btn-outline">Beräkna Din Avkastning →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Profit & Environmental Impact Calculator -->
+  <section class="section section-alt" id="kalkylator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">INTERAKTIV SIMULATOR</span>
+        <h2 class="section-title">Räkna ut din <span class="text-gradient">Framtida Vinst &amp; Klimatnytta</span></h2>
+        <p class="section-desc">
+          Se hur din investering i Presale Fas 3 (0.45 kr / $SELO) kan utvecklas vid lansering och global expansion – samtidigt som du ser hur mycket natur du räddar.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-controls">
+          <div class="calc-control-group">
+            <div class="calc-label-row">
+              <label for="calcInvestRange">Ditt Investeringsbelopp</label>
+              <span class="calc-current-val" id="calcInvestDisplay">10 000 kr</span>
+            </div>
+            <input type="range" id="calcInvestRange" min="1000" max="200000" step="1000" value="10000" class="selo-slider" />
+            <div class="range-minmax">
+              <span>1 000 kr</span>
+              <span>50 000 kr</span>
+              <span>100 000 kr</span>
+              <span>200 000 kr</span>
+            </div>
+          </div>
+
+          <div class="calc-control-group">
+            <div class="calc-label-row">
+              <label for="calcMonthsRange">Innehavstid med Grön Staking (18.5% APY)</label>
+              <span class="calc-current-val" id="calcMonthsDisplay">12 månader</span>
+            </div>
+            <input type="range" id="calcMonthsRange" min="1" max="36" step="1" value="12" class="selo-slider" />
+            <div class="range-minmax">
+              <span>1 mån</span>
+              <span>12 mån</span>
+              <span>24 mån</span>
+              <span>36 mån</span>
+            </div>
+          </div>
+
+          <div class="calc-control-group">
+            <label class="scenario-label">Välj Marknadsscenario för $SELO:</label>
+            <div class="scenario-buttons">
+              <button type="button" class="scenario-btn" data-price="1.28">
+                <span class="scen-name">Vid Börsnotering</span>
+                <strong class="scen-price">1.28 kr ($0.12)</strong>
+              </button>
+              <button type="button" class="scenario-btn active" data-price="3.20">
+                <span class="scen-name">Målkurs År 1</span>
+                <strong class="scen-price">3.20 kr ($0.30)</strong>
+              </button>
+              <button type="button" class="scenario-btn" data-price="8.00">
+                <span class="scen-name">Global ESG-Boom</span>
+                <strong class="scen-price">8.00 kr ($0.75)</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="calc-result-main">
+            <span class="res-eyebrow">UPPSKATTAT PORTFÖLJVÄRDE</span>
+            <div class="res-big-number" id="calcTotalValue">84 195 kr</div>
+            <div class="res-profit-badge" id="calcProfitPct">+742% Total Avkastning (+74 195 kr)</div>
+          </div>
+
+          <div class="calc-breakdown-grid">
+            <div class="breakdown-box">
+              <span class="bd-label">Antal $SELO vid köp</span>
+              <strong class="bd-val" id="calcInitTokens">22 222 SELO</strong>
+            </div>
+            <div class="breakdown-box">
+              <span class="bd-label">Grön Staking-belöning</span>
+              <strong class="bd-val highlight-green" id="calcStakedTokens">+4 111 SELO</strong>
+            </div>
+            <div class="breakdown-box eco-box">
+              <span class="bd-label">🌲 Din Planterade Skog</span>
+              <strong class="bd-val" id="calcTrees">100 Träd</strong>
+            </div>
+            <div class="breakdown-box eco-box">
+              <span class="bd-label">🌍 Koldioxid Bundet</span>
+              <strong class="bd-val" id="calcCo2">2.5 Ton CO₂/år</strong>
+            </div>
+          </div>
+
+          <a href="#presale-widget" class="btn btn-primary btn-block" id="applyCalcToBuyBtn">
+            Investera detta belopp nu &amp; säkra dina $SELO →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 Pillars of Environmental Preservation -->
+  <section class="section" id="ekosystem">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">VERKLIG MILJÖPÅVERKAN</span>
+        <h2 class="section-title">Så räddar SeloCoin <span class="text-gradient">vår planet i praktiken</span></h2>
+        <p class="section-desc">
+          Ingen "greenwashing". Varje krona som flödar in i SeloCoins miljöfond styrs av öppna smarta kontrakt och verifieras av oberoende miljöorganisationer.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">🌳</div>
+          <span class="pillar-tag">PELARE 1 • SKOG &amp; BIOLOGISK MÅNGFALD</span>
+          <h3>Återbeskogning med Drönare &amp; Lokalsamhällen</h3>
+          <p>
+            Vi finansierar storskalig återplantering i Amazonas, Borneo och nordiska naturskogar. Med hjälp av AI-drönare och lokala skogsvaktare uppnår vi 94% överlevnadsgrad för alla planterade träd.
+          </p>
+          <div class="pillar-stat">
+            <strong>60% av Miljöfonden</strong>
+            <span>Går oavkortat till skogsbevarande</span>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">☀️</div>
+          <span class="pillar-tag">PELARE 2 • REN ENERGI</span>
+          <h3>Sol- och Vindkraft i Utvecklingsländer</h3>
+          <p>
+            SeloCoin investerar i mikro-solnät som ersätter dieselgeneratorer och kolkraft. Överskottsel och koldioxidkrediter från dessa anläggningar återinvesteras direkt i $SELO-ekosystemet.
+          </p>
+          <div class="pillar-stat">
+            <strong>25% av Miljöfonden</strong>
+            <span>Bygger ut förnybar energi</span>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">🌊</div>
+          <span class="pillar-tag">PELARE 3 • RENA HAV</span>
+          <h3>Plastinsamling &amp; Skydd av Korallrev</h3>
+          <p>
+            För varje miljon $SELO som omsätts finansierar vi insamling av 5 ton havsplast och återuppbyggnad av marina algskogar som binder koldioxid upp till 20 gånger snabbare än landväxter.
+          </p>
+          <div class="pillar-stat">
+            <strong>15% av Miljöfonden</strong>
+            <span>Skyddar världshaven &amp; blått kol</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics & Roadmap -->
+  <section class="section section-alt" id="tokenomics">
+    <div class="container">
+      <div class="tokenomics-grid">
+        <!-- Tokenomics Left -->
+        <div class="tokenomics-box">
+          <span class="section-eyebrow">TOKENOMICS</span>
+          <h2 class="section-title">Byggd för långsiktig värdeökning</h2>
+          <p class="section-desc" style="text-align:left; margin-left:0;">
+            Fast maxutbud på <strong>1 000 000 000 $SELO</strong>. Inga nya mynt kan någonsin skapas, och genom <em>Eco-Burn™</em> minskar antalet mynt i cirkulation varje dag.
+          </p>
+
+          <div class="token-bars">
+            <div class="token-bar-item">
+              <div class="tb-head">
+                <span><strong>40%</strong> • Presale &amp; Tidiga Investerare</span>
+                <span>400M SELO</span>
+              </div>
+              <div class="tb-track"><div class="tb-fill" style="width:40%; background:#10B981;"></div></div>
+            </div>
+
+            <div class="token-bar-item">
+              <div class="tb-head">
+                <span><strong>25%</strong> • Miljöfonden &amp; Trädplantering (Låst styrning)</span>
+                <span>250M SELO</span>
+              </div>
+              <div class="tb-track"><div class="tb-fill" style="width:25%; background:#34D399;"></div></div>
+            </div>
+
+            <div class="token-bar-item">
+              <div class="tb-head">
+                <span><strong>15%</strong> • Grön Staking &amp; Community Rewards</span>
+                <span>150M SELO</span>
+              </div>
+              <div class="tb-track"><div class="tb-fill" style="width:15%; background:#F59E0B;"></div></div>
+            </div>
+
+            <div class="token-bar-item">
+              <div class="tb-head">
+                <span><strong>12%</strong> • Börslikviditet (DEX &amp; Tier-1 CEX)</span>
+                <span>120M SELO</span>
+              </div>
+              <div class="tb-track"><div class="tb-fill" style="width:12%; background:#38BDF8;"></div></div>
+            </div>
+
+            <div class="token-bar-item">
+              <div class="tb-head">
+                <span><strong>8%</strong> • Grundarteam &amp; Forskning (Låst i 36 månader)</span>
+                <span>80M SELO</span>
+              </div>
+              <div class="tb-track"><div class="tb-fill" style="width:8%; background:#A78BFA;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Roadmap Right -->
+        <div class="roadmap-box">
+          <span class="section-eyebrow">FÄRDPLAN 2026–2027</span>
+          <h2 class="section-title">Vägen till 10 Miljoner Träd</h2>
+
+          <div class="timeline">
+            <div class="timeline-item completed">
+              <div class="tl-marker">✓</div>
+              <div class="tl-content">
+                <span class="tl-phase">FAS 1 • KLAR</span>
+                <h4>Grundande, CertiK-Audit &amp; Första 500 000 Träden</h4>
+                <p>Smart kontrakt reviderat med 99.4% betyg. Partnerskap med nordiska och globala skogsorganisationer signerade.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item active">
+              <div class="tl-marker">●</div>
+              <div class="tl-content">
+                <span class="tl-phase">FAS 2 • PÅGÅR NU</span>
+                <h4>Offentlig Presale &amp; Lansering av Grön Staking</h4>
+                <p>Över 1,4 miljoner träd planterade. Presale Fas 3 öppen för allmänheten innan börsnotering.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-marker">3</div>
+              <div class="tl-content">
+                <span class="tl-phase">FAS 3 • NÄSTA STEG</span>
+                <h4>Notering på Stora Kryptobörser &amp; Green-NFT App</h4>
+                <p>Lansering på Uniswap och ledande europeiska kryptobörser till lanseringspriset $0.12. Mobilapp med live satellitvy över din skog.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-marker">4</div>
+              <div class="tl-content">
+                <span class="tl-phase">FAS 4 • GLOBAL SKALNING</span>
+                <h4>SeloPay Grönt Betalkort &amp; ESG-Företagsportal</h4>
+                <p>Betala i vardagen med SeloPay Visa-kortet – varje kaffe du köper planterar ett träd automatiskt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Investor Voices -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow"> röster från våra över 18 400 investerare</span>
+        <h2 class="section-title">Därför väljer svenska investerare <span class="text-gradient">SeloCoin</span></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">
+            "Jag har länge velat investera i krypto men tvekat på grund av klimatpåverkan. Med SeloCoin fick jag både ett tydligt miljöcertifikat på 250 planterade träd och har redan sett mina staking-belöningar ticka in varje vecka!"
+          </p>
+          <div class="author">
+            <div class="avatar">EL</div>
+            <div>
+              <strong>Erik Lindqvist</strong>
+              <span>Hållbarhetsinvesterare, Stockholm • Köpte i Fas 1</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">
+            "Kombinationen av deflationär token-bränning och företags efterfrågan på verifierade koldioxidkrediter gör SeloCoin till det mest genomtänkta kryptoprojektet jag sett i år. Otroligt smidigt att köpa direkt i SEK."
+          </p>
+          <div class="author">
+            <div class="avatar">SJ</div>
+            <div>
+              <strong>Sofia Jansson</strong>
+              <span>Finansanalytiker, Göteborg • Stakar 85 000 $SELO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="quote">
+            "Vårt techbolag köpte SeloCoin för att klimatkompensera vår serverdrift. Att vi samtidigt äger en tillgång som stiger i värde istället för en engångskostnad är helt briljant."
+          </p>
+          <div class="author">
+            <div class="avatar">MK</div>
+            <div>
+              <strong>Marcus Karlsson</strong>
+              <span>VD &amp; Grundare, Malmö • Företagspartner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-alt" id="faq">
+    <div class="container faq-container">
+      <div class="section-header">
+        <span class="section-eyebrow">VANLIGA FRÅGOR</span>
+        <h2 class="section-title">Allt du behöver veta innan du investerar</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question" type="button">
+            <span>Hur vet jag att mina pengar faktiskt planterar träd och hjälper miljön?</span>
+            <span class="faq-toggle">−</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              All miljöfinansiering i SeloCoin sker helt automatiskt via vårt öppna smarta kontrakt (Proof-of-Canopy™). Direkt efter ditt köp utfärdas ett digitalt klimatcertifikat med batch-nummer och satellitkoordinater från våra certifierade partners (Verra &amp; OneTreePlanted). Du kan när som helst följa exakt var skogen växer.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Hur köper jag SeloCoin ($SELO) enklast?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Du kan köpa direkt i vår Presale-ruta högst upp på sidan. Välj om du vill betala med <strong>Kort/Swish (SEK)</strong> eller med krypto (ETH/USDT). Dina $SELO reserveras direkt på ditt konto/plånbok och om du kryssar i "Grön Staking" börjar de generera 18.5% APY redan samma minut.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>När listas SeloCoin på kryptobörser och vad är lanseringspriset?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Så fort Presale når sitt mål (84.6% är redan sålt) listas $SELO på decentraliserade och centraliserade börser till lanseringspriset <strong>$0.120 (ca 1.28 kr)</strong>. Det innebär att dig som köper idag i Fas 3 för <strong>$0.042 (0.45 kr)</strong> får en betydande rabatt före offentlig handel startar.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Är mina tokens låsta eller kan jag sälja när jag vill?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Dina köpta Presale-tokens har <strong>ingen inlåsningstid</strong> vid börslanseringen – du har full kontroll över dina tillgångar. Även i Grön Staking kan du när som helst välja att ta ut dina mynt med intjänad ränta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call to Action Banner -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <span class="badge-pill">🌱 BEGRÄNSAT ANTAL TOKENS KVAR I FAS 3</span>
+        <h2>Gör en investering som både din framtid och planeten tackar dig för.</h2>
+        <p>Gå med över 18 400 investerare idag. Säkra $SELO för 0.45 kr innan priset höjs vid nästa etapp.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#presale-widget" class="btn btn-primary btn-lg">Köp SeloCoin ($SELO) Nu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span class="brand-name">SeloCoin ($SELO)</span>
+        </a>
+        <p>
+          Framtidens gröna finansiella ekosystem. Vi förenar blockkedjeteknikens tillväxtkraft med verifierat skydd av världens skogar och klimat.
+        </p>
+        <p class="copyright">© 2026 SeloCoin Foundation. Alla rättigheter förbehållna.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Snabblänkar</h4>
+        <a href="#presale-widget">Köp i Presale</a>
+        <a href="#varfor">Proof-of-Canopy™</a>
+        <a href="#kalkylator">Avkastningskalkylator</a>
+        <a href="#tokenomics">Tokenomics &amp; Whitepaper</a>
+      </div>
+      <div class="footer-links">
+        <h4>Miljö &amp; Säkerhet</h4>
+        <a href="#ekosystem">Satellit-spårning av Träd</a>
+        <a href="#tokenomics">CertiK Säkerhetsrapport</a>
+        <a href="#faq">ESG Företagslösningar</a>
+        <a href="#faq">Vanliga Frågor</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Purchase / Certificate Modal -->
+  <div class="modal-backdrop" id="purchaseModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModalBtn" aria-label="Stäng">×</button>
+      <div class="modal-icon">🌿</div>
+      <span class="modal-badge">PRELIMINÄR ORDER &amp; MILJÖCERTIFIKAT</span>
+      <h3>Tack! Din SeloCoin-allokering är redo</h3>
+      <p id="modalSummaryText">
+        Du är på väg att investera <strong>5 000 SEK</strong> och säkra <strong>12 222 $SELO</strong>.
+      </p>
+
+      <div class="certificate-preview">
+        <div class="cert-header">
+          <span>🌳 OFFICIELLT PROOF-OF-CANOPY™ CERTIFIKAT</span>
+          <span class="cert-id" id="modalCertId">#SELO-2026-8841</span>
+        </div>
+        <div class="cert-body">
+          <div class="cert-stat">
+            <span>Allokerade Tokens</span>
+            <strong id="modalTokens">12 222 $SELO</strong>
+          </div>
+          <div class="cert-stat">
+            <span>Planterade Träd</span>
+            <strong id="modalTrees">50 Träd (GPS-verifierade)</strong>
+          </div>
+          <div class="cert-stat">
+            <span>Årlig Klimatnytta</span>
+            <strong id="modalCo2">1 250 kg CO₂/år</strong>
+          </div>
+          <div class="cert-stat">
+            <span>Vald Staking</span>
+            <strong id="modalStaking">18.5% APY Aktiverad</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-form">
+        <label for="investorEmail">Ange din e-post eller plånboksadress för leverans av kvitto &amp; trädkarta:</label>
+        <input type="text" id="investorEmail" placeholder="namn@exempel.se eller 0x71C..." />
+        <button type="button" class="btn btn-primary btn-block btn-lg" id="confirmPurchaseBtn">
+          Slutför Investering &amp; Hämta Certifikat ✓
+        </button>
+      </div>
+      <div class="modal-success-msg" id="modalSuccessMsg" style="display:none;">
+        🎉 <strong>Grattis och välkommen till SeloCoin!</strong> Dina $SELO och ditt skogscertifikat har registrerats. Tack för att du är med och bevarar vår planet!
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
